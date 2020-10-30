@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nag champa</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--파비콘(favicon)-->
+    <link href="img/fbcon.png" type="image/png" rel="shortcut icon">
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    
+    
+    <script src="js/jquery-3.5.1.js">
+    </script>
+    
+    <script src="js/jquery.easing.1.3.js">
+    </script>
+    
+    <script>
+    $(function(){
+        //pc버전 sns 마우스 오버 효과
+        $('.photo ul li').hover(function(){
+            
+            
+            $(this).find('span').addClass('active');
+            
+        });
+            
+         $('.photo ul li').mouseleave(function(){
+                 
+             $(this).find('span').removeClass('active');
+             
+             
+        });
+        
+        //tab_menu
+        
+        $('.mo_navi').click(function(){
+            $('.tab_menu').animate({left:0},700,"easeOutBack");
+            
+        });
+        
+        
+        $('.close_btn').click(function(){
+            $('.tab_menu').animate({'left':'-600px'},700,"easeOutBack");
+            
+        });
+        
+        
+        //아코디언 메뉴
+        
+        
+        //.tab_menu>.tab_wrap>nav> ul> li>a객체(주매뉴)를 저장하여라.
+        var btn=$('.tab_menu>.tab_wrap>nav> ul> li>a');
+        //주메뉴에 마우스 클릭 이벤트 설정
+        btn.click(function(){
+           //만약 주메뉴에 class 속성이 active가 아니라면
+            //$(this): 클릭한 주메뉴
+            //attr('class'):class속성, attribute
+            //!=:비교연산자(같지않음)
+            if($(this).attr('class')!='active'){
+                
+                //주메뉴의 형제객체(next())는 들어감
+                btn.next().slideUp();
+                
+                //주메뉴의 active클래스 제거
+                btn.removeClass('active');
+                
+                //클릭한 주메뉴에만 active클래스 추가
+                $(this).addClass('active');
+                
+                //클릭한 주메뉴의 형제객체만 내려옴
+                $(this).next().slideDown();
+            }
+            
+            //if릐 조건이 거짓이라면 
+            //주메뉴의 active 클래스가 설정 되어있다면 
+            else{
+                
+                //클릭한 주메뉴의 active클래스 제거
+                $(this).removeClass('active');
+                //클릭한 주메뉴의 형제객체 들어감
+                $(this).next().slideUp();
+            }
+            
+        })
+           
+        
+        });
+        
+    </script>
+</head>
+<body>
+  <div class="wrap">
+       <header>
+           <div class="header_wrap">
+
+
+               <div class="mo_navi">
+                   <a href="#">
+                       <img src="img/icon-menu.png" alt="menu">
+                   </a>
+               </div>
+
+
+
+              <!--tapmenu-->
+
+
+               <div class="logo">
+                   <a href="https://eunyeongee.github.io/nagchampa/">
+                       <img src="img/logo.png" alt="logo">
+                   </a>
+               </div>
+               
+               
+               
+               
+               <nav>
+                   <ul>
+                       <li>
+                           <a href="#">
+                               <div class="join">
+                                   <img src="img/icon-join.png" alt="join">
+                               </div>
+                               <p>join</p>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <div class="cart">
+                                   <img src="img/icon-cart.png" alt="cart">
+                               </div>
+                               <p>cart</p>
+                           </a>
+                       </li>
+                   </ul>
+               </nav>
+               
+               
+               
+               
+               
+           </div>
+       </header>
+   <section>
+      
+      <!--main-video-->
+      
+      
+      
+       <section class="video">
+          <iframe width="10" height="720" src="https://www.youtube.com/embed/igsBz1LUrSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <!--<video controls autoplay muted>
+              <source src="video/video.mp4"/>
+          </video>-->
+       </section>
+       
+       
+       
+       <section class="m_video">
+           <a href="https://www.youtube.com/watch?v=igsBz1LUrSU&feature=emb_title">
+              
+               <div class="txt">
+                   <p>NEW: <br>
+                   BACKFLOW HOLDER</p>
+               <i>
+                   역으로 흐르는 향
+               </i>
+                   
+               </div>
+               
+           </a>
+           
+           
+       </section>
+       <!--banner1-->
+       <section class="best">
+          
+           <article class="best_wrap">
+               <div class="txt">
+                   BEST
+               </div>
+               <div class="product">
+
+                  
+                   <ul>
+
+                       <li>
+                           <div class="arrow_left">
+                               <img src="img/arrow-left-icons.png" alt="">
+                           </div>
+                       </li>
+                       <li>
+                           <div class="p1">
+                               <img src="img/best1.png" alt="나그참파 인센스 스틱 15g">
+                               <p>나그참파 인센스 스틱 15g</p>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="p2">
+                               <img src="img/best2.png" alt="인센스 홀더 라운드형">
+                               <p>인센스 홀더 라운드형</p>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="p3">
+                               <img src="img/best3.png" alt="아유베르다 인센스 스틱 15g">
+                               <p>아유베르다 인센스 스틱 15g</p>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="arrow_right">
+                               <img src="img/arrow-right-icons.png" alt="">
+                           </div>
+                       </li>
+
+                   </ul>
+
+                     <div class="bar">
+                   <ul>
+                       <li>
+
+                       </li>
+                       <li>
+
+                       </li>
+                       <li>
+
+                       </li>
+                   </ul>
+               </div>
+               
+               </div>
+             
+
+           </article>
+
+       </section>
+       
+       
+       <!--banner2-->
+       
+       
+       
+       <section class="lowew">
+           
+           <div class="lowew_wrap">
+               <div class="txt">
+                 
+                  <p class="lowew_txt">LOWEW</p>
+                  <p class="x">
+                      X
+                  </p>
+                  <p class="nagchampa_txt">
+                      <img src="img/logo.png" alt="nagchampa logo">
+                  </p>
+                   
+               </div>
+               <div class="look">
+                   <a href="#">자세히보기</a>
+               </div>
+           </div>
+           
+       </section>
+       <div class="m_look_btn">
+               <a href="#">보러가기</a>
+           </div>
+       
+       
+       
+       <!--banner3-->
+       
+       <section class="main">
+           <article class="visual">
+               <div class="area">
+                   <img src="img/my-place.png" alt="myplace">
+                   
+                  
+               </div>
+               
+               <div class="over">
+                       <div class="txt">
+
+                           <ul>
+                               <li>
+                                   <h1>NEW:<br>나른한 주말오후의 향</h1>
+
+                               </li>
+                               <li>
+                                   <a href="#">
+                                       <p>자세히 보기</p>
+                                   </a>
+                               </li>
+                           </ul>
+                           
+
+                       </div>
+                </div>
+               
+               
+               </article>
+               
+                <div class="m_look_btn">
+               <a href="#">자세히보기</a>
+           </div>
+               <article class="new">
+
+                  
+                   <ul>
+                       <li>
+                           <div class="n1">
+                                    
+                               <i>
+                               <img src="img/product1.jpg" alt="내추럴 라벤더 인센스 스틱 15g">
+                               </i>
+
+
+                               <p>내추럴 라벤더 인센스 스틱 15g</p>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="n2">
+                               
+                               <i>
+                               <img src="img/product2.jpg" alt="내추럴 로즈 인센스 스틱 15g">
+                               </i>
+
+
+                               <p>내추럴 로즈 인센스 스틱 15g</p>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="n3">
+                                <i>
+                               <img src="img/product3.jpg" alt="세븐 차크라 인센스 스틱 15g">
+                                </i>
+
+
+                               <p>세븐 차크라 인센스 스틱 15g</p>
+                           </div>
+
+                       </li>
+                       <li>
+                           <div class="n4">
+                               <i>
+                               <img src="img/product4.jpg" alt="나그참파 콘">
+                               </i>
+
+                               <p>나그참파 콘</p>
+                           </div>
+                       </li>
+                   </ul>
+
+
+               
+
+               </article>
+
+           
+           
+       </section>
+       
+       
+       
+       
+       
+       <!--banner4-->
+       
+       
+       
+       
+       
+       <section class="bodywash">
+           <div class="limited">
+               <div class="org">
+                   <div class="txt">
+
+                        <div class="txt_wrap">
+                            <p class="txt1"> LIMITED EDITION: <br>
+                                몸과 마음을 relex 시켜주는
+                            </p>
+                            <p class="org_bodywash">
+                                nag champa original bodywash
+                            </p>
+                            <p class="kor">
+                                나그참파의 인센스향을 그대로 담은 바디워시
+                            </p>
+                            <div class="more">
+                                <a href="#">
+                                보러가기→
+                            </a>
+                            </div>
+                        </div>
+                        
+
+                   </div>
+                   
+                   <div class="wash">
+                       <ul>
+                           <li>
+                               <div class="p1">
+                                   <img src="img/bodywash.png" alt="나그참파 오리지널 바디워시">
+
+                                   <p>나그참파 오리지널 바디워시</p>
+                                   
+                                   <div class="new">
+                                   <p>new</p>
+                               </div>
+                               
+                               </div>
+                              
+
+                           </li>
+                           <li>
+                               <div class="p2">
+                                   <img src="img/bodywash.png" alt="나그참파 슈퍼히트 바디워시">
+
+                                   <p>나그참파 슈퍼히트 바디워시</p>
+                                   
+                                    <div class="new">
+                                   <p>new</p>
+                                   
+                               </div>
+
+                               </div>
+                              
+                           </li>
+                       </ul>
+                   </div>
+
+               </div>
+                <div class="m_look_btn">
+               <a href="#">자세히보기</a>
+           </div>
+
+
+               <div class="place">
+                   <img src="img/relex.PNG" alt="relex">
+
+               </div>
+           </div>
+       </section>
+       
+       
+       <!--banner5-->
+       
+       <section class="event">
+           <div class="e_wrap">
+               <div class="txt">
+                   <div class="title">
+                       <p>SUMMER EVENT</p>
+                   </div>
+                   <div class="con">
+                       <span>HOLDER 구매시,<br>
+                       Incense stick 5g 랜덤증정</span>
+                   </div>
+                    <div class="bar">
+                        <p>|</p>
+                    </div>
+                    <div class="more">
+                        <a href="#">
+                            자세히보기
+                        </a>
+                    </div>
+                    
+               </div>
+               <div class="frame">
+               <div class="box">
+                   <div class="b_img">
+                   </div>
+               </div>
+               <p>본 이벤트는 재고소진시 종료됩니다.</p>
+               </div>
+           </div>
+           
+       </section>
+        <div class="m_look_btn">
+               <a href="#">자세히보기</a>
+           </div>
+       
+       
+       
+       
+       <!--banner6--->
+       
+        
+        
+       
+       
+       <section class="review">
+           <article class="r_wrap">
+               <div class="r_txt">
+                   #nagchampa
+               </div>
+               <div class="photo">
+                  <ul class="p1">
+                      <li>
+                          <a href="#">
+                              <span>
+                              <p>@winsomeee__</p>
+                              </span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <span>
+                              <p>@xxun9_pu6p1e</p>
+                              </span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <span>
+                              <p>@_beige2.bom_</p>
+                              </span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <span>
+                              <p>@nouvelmod</p>
+                              </span>
+                          </a>
+                      </li>
+                      
+                      
+                  </ul>
+                  <ul class="p2">
+                      <li>
+                          <a href="#">
+                              <span>
+                              <p>@yye_u130</p>
+                              </span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <span>
+                              <p>@yoga_hana.studio</p>
+                              </span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <span>
+                              <p>@10_13d</p>
+                              </span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <span>
+                              <p>@hanjieun___</p>
+                              </span>
+                          </a>
+                      </li>
+                  </ul>
+                  <div class="m_look_btn">
+               <a href="#">MORE</a>
+           </div>
+                  <div class="more">
+                      <a href="#">
+                          MORE
+                      </a>
+                  </div>
+                   
+               </div>
+               
+           </article>
+           
+       </section>
+        
+   </section>
+   
+   
+   
+   
+   <!--footer-->
+   
+   
+   
+   
+   
+  </div>
+  
+   
+    
+<!--wrap end-->
+  
+  
+  
+<!--tap menu-->
+
+
+
+               <div class="tab_menu">
+                   <div class="tab_wrap">
+                       <div class="close_btn">
+                           <a href="#">
+                               <img src="img/600px-close_.png" alt="close">
+                           </a>
+                       </div>
+
+
+                       <div class="tab_logo">
+                           <a href="index.html">
+                               <img src="img/logo.png" alt="logo">
+                           </a>
+
+                       </div>
+
+
+
+                       <div class="search">
+                           <input type="text" placeholder="당신의 향을 입력해주세요.">
+                           <button>
+                               <img src="img/icon-search.png" alt="search">
+                           </button>
+                       </div>
+
+
+                       <nav>
+                           <ul>
+                               <li>
+                                   <a href="#">
+                                       INCENSE
+                                       <p></p>
+
+                                   </a>
+                                   
+
+                                   <ul class="sub">
+                                       <li>
+                                           10g
+                                       </li>
+                                       <li>
+                                           15g
+                                       </li>
+                                       <li>
+                                           40g
+                                       </li>
+                                       <li>
+                                           100g
+                                       </li>
+                                   </ul>
+                               </li>
+                               
+                               
+                               <li>
+                                   <a href="#">
+                                       SOAP
+                                       <p></p>
+                                   </a>
+                                   
+                               </li>
+                               <li>
+                                   <a href="#">
+                                       HOLDER
+                                       <p></p>
+                                   </a>
+                                   
+                                   <ul class="sub">
+                                       <li>
+                                           박스형
+                                       </li>
+                                       <li>
+                                           라운드형
+                                       </li>
+                                       <li>
+                                           요트형
+                                       </li>
+                                   </ul>
+                               </li>
+                               <li>
+                                   <a href="#">
+                                       MATCH
+                                       <p></p>
+                                   </a>
+                                   
+                               </li>
+                           </ul>
+                       </nav>
+                   </div>
+               </div>
+
+
+
+               <!--tap menu-->
+  
+  <footer>
+      <article class="f_wrap">
+          <div class="f1">
+              <ul>
+                  <li>
+                      <a href="#">
+                          ABOUT
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          매장정보
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          문의하기
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          이용약관
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          개인정보처리방침
+                      </a>
+                  </li>
+              </ul>
+              
+          </div>
+          <div class="f2">
+             <p>
+              상호명 일곱코리아 | 대표이사: 이택희 | Service: 070-7740-7778 <br> 
+              FAX: 031-8003-7778 | Adress : 경기 화성시 동탄기흥로257번나길 4-8 1층 
+              </p>
+          </div>
+          <div class="f3">
+            <p>
+             사업자등록번호 : 495-04-00680 <br>
+             | 평일 AM 09:00 - PM 18:00 (점심 PM 12:00 - PM 13:00 <b>주말/공휴일 휴무</b>)
+             </p>
+             <div class="sns">
+                 <ul>
+                     <li>
+                         <a href="#">
+                             <img src="img/facebook.png" alt="facebook">
+                         </a>
+                     </li>
+                     <li>
+                         <a href="#">
+                             <img src="img/naver.png"
+                             alt="naver">
+                         </a>
+                     </li>
+                     <li>
+                         <a href="#">
+                             <img src="img/insta.png" alt="instagram">
+                         </a>
+                     </li>
+                     <li>
+                         <a href="#">
+                             <img src="img/youtube.png" alt="youtube">
+                         </a>
+                     </li>
+                 </ul>
+             </div>
+          </div>
+          <div class="f_logo">
+              <img src="img/logo.png" alt="f_logo">
+          </div>
+          <div class="copy">
+              <p>ⓒ 2020 nag champa</p>
+          </div>
+          
+      </article>
+       
+   </footer>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
