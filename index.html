@@ -54,7 +54,8 @@
             var menuClose = $('.close_btn');
             
        
-            menuclick.click(function() {
+            menuclick.click(function(e) {
+                e.preventDefault
                 menuBox.animate({
                     left: 0
                 }, 700);
@@ -63,7 +64,8 @@
             });
 
 
-            menuClose.click(function() {
+            menuClose.click(function(e) {
+                e.preventDefault
                 menuBox.animate({
                     'left': '-600px'
                 }, 700);
