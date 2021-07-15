@@ -39,12 +39,12 @@
             //tab_menu
             var menuBg = $('.tab_bg');
             var bgHeight = $(document).height();
-            var bgWidth = $(window).width();
+            var bgWidth = $(document).width();
             
             
             menuBg.css({
-                'width': bgWidth,
-                'height': bgHeight
+                'width': bgWidth
+                //'height': bgHeight
             });
             
             
@@ -129,7 +129,7 @@
 
 
             <div class="mo_navi">
-                <a href="#">
+                <a href="#" class="mo_navi">
                     <img src="img/icon-menu.png" alt="menu">
                 </a>
             </div>
@@ -308,6 +308,7 @@
 
             <section class="main">
                 <article class="visual">
+                   
                     <div class="area">
                         <img src="img/my-place.png" alt="myplace">
 
@@ -632,7 +633,7 @@
     <div class="tab_menu">
         <div class="tab_wrap">
             <div class="close_btn">
-                <a href="#">
+                <a href="#" class="close_btn">
                     <img src="img/600px-close_.png" alt="close">
                 </a>
             </div>
@@ -721,10 +722,7 @@
     
     
     
-    <!--tab_bg-->
-   <div class="tab_bg">
-        
-    </div>
+    
 
 
 
@@ -808,6 +806,11 @@
         </article>
 
     </footer>
+    
+    <!--tab_bg-->
+   <div class="tab_bg">
+        
+    </div>
     
 
 
