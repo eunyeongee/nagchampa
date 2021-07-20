@@ -1208,6 +1208,10 @@ body {
         z-index: 15;
 
     }
+    
+    .tab_menu .tab_wrap ul li ul {
+        display: none;
+    }
 
 
     .tab_menu .tab_wrap {
