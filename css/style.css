@@ -1229,20 +1229,26 @@ body {
 
 
     .tab_menu .tab_wrap .search {
-        width: 200px;
-        padding: 30px 0;
-        height: 25px;
+        width:100%;
+        padding: 20px 0;
+        height: 30px;
     }
 
     .tab_menu .tab_wrap .search input {
+        width: 75%;
+        height: 30px;
+        font-size: 11px;
+        padding-left: 10px;
         float: left;
-        height: 20px;
+        border: 1px #6a6a6a solid;
+        
     }
 
     .tab_menu .tab_wrap .search button {
+        background-color:transparent;
+        border:none;
         float: right;
-        width: 25px;
-        height: 25px;
+        width: 27px;
     }
 
     .tab_bg {
@@ -2299,21 +2305,26 @@ body {
 
 
     .tab_menu .tab_wrap .search {
-        width: 335px;
+        width: 100%;
         padding: 30px 0;
-        height: 25px;
+        height: 50px;
     }
 
     .tab_menu .tab_wrap .search input {
-        width: 300px;
+        width: 350px;
         float: left;
-        height: 25px;
+        font-size:18px;
+        border: #6a6a6a 1px solid;
+        height: 50px;
+        padding-left: 10px;
+        box-sizing: border-box;
     }
 
     .tab_menu .tab_wrap .search button {
-        float: right;
-        width: 30px;
-        height: 29px;
+        background-color:transparent;
+        margin: 5px 0 0 20px;
+        border:none;
+        width: 40px;
     }
 
     .tab_menu .tab_wrap .tab_logo {
@@ -2322,9 +2333,13 @@ body {
     }
 
     .tab_menu .tab_wrap ul li:hover p {
-        width: 15%;
+        width: 17%;
         height: 2px;
         background-color: #bba795;
+    }
+    
+    .tab_menu .tab_wrap ul li:nth-child(2):hover p{
+        width: 10%;
     }
 
     .tab_menu > .tab_wrap > ul > li > a {
@@ -2332,6 +2347,7 @@ body {
     }
 
     .tab_menu .tab_wrap ul li {
+        font-size:18px;
         padding-top: 10px;
         overflow: hidden;
     }
@@ -2341,7 +2357,7 @@ body {
     }
 
     .tab_menu .tab_wrap ul li ul li {
-        font-size: 14px;
+        font-size: 16px;
         padding-left: 20px;
     }
 
