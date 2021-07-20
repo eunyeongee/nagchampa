@@ -132,24 +132,21 @@ body {
         overflow-x: hidden;
 
 
-
-
-        /*header*/
-
-
     }
+    
+     /*header*/
 
     header {
         width: 100%;
         height: 65px;
         position: fixed;
-        z-index: 1;
+        z-index: 12;
         background: #fff;
 
     }
 
     header .header_wrap {
-        width: 95%;
+        width: 90%;
         height: 25px;
         margin: 10px auto 0;
         display: flex;
@@ -158,7 +155,7 @@ body {
     }
 
     header .mo_navi {
-        float: left;
+        width:65px;
         margin-top: 5px;
     }
 
@@ -170,10 +167,12 @@ body {
     /*header-logo*/
 
 
-
+    header .logo {
+        width:150px;
+    }
     header .logo a {
-        width: 130px;
-        margin-left: 100px;
+        width: 100%;
+        
     }
 
 
@@ -181,12 +180,15 @@ body {
 
 
     header > .header_wrap > nav {
-        margin-top: 10px;
+        width:65px;
+        float:right;
+        margin-top: 8px;
     }
-
+    header > .header_wrap > nav > ul  {
+    }
     header > .header_wrap > nav > ul > li {
         width: 18px;
-        margin-left: 35px;
+        margin:0 10%;
         float: left;
     }
 
@@ -438,41 +440,63 @@ body {
 
     .lowew {
         width: 100%;
-        height: 252px;
-        background-image: url(../img/loewe.png);
-        background-size: 100% 252px;
-        overflow: hidden;
+        height:500px;
+        margin-top:30px;
     }
 
     .lowew .lowew_wrap {
-        width: 25%;
-        margin-left: 240px;
-        padding: 20px 0;
+        width:100%;
+        height:100%;
         box-sizing: border-box;
 
 
     }
-
-    .lowew .lowew_wrap .txt {
+    
+    .lowew .lowew_wrap .bg_wrap {
+        width:100%;
+        height:100%;
+    }
+    
+    .lowew .lowew_wrap .bg_wrap .desktop_lowew{
+        display:none;
+    }
+    
+    .lowew .lowew_wrap .bg_wrap .mobile_lowew {
         width: 100%;
-        height: 25%;
-        margin-top: 50%;
-        text-align: center;
-        font-family: vogue;
-        font-size: 5vw;
-        color: #000;
-        filter: drop-shadow(2px 2px 2px #8e8e8e);
+        height: 100%;
+        background-image: url(../img/mobile-lowew.jpg);
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
     }
 
-    .lowew .lowew_wrap .txt .lowew_txt {
-        margin-bottom: 10px;
+    .lowew .lowew_wrap .bg_wrap .mobile_lowew .txt {
+        width:100%;
+        padding:70% 5% 5% 5%;
+        height:100%;
+        box-sizing: border-box;
+        color: #fff;
+    }
+    
+
+
+    .lowew .lowew_wrap .bg_wrap .mobile_lowew h3 {
+        font-weight: normal;
+        font-size: 25px;
     }
 
-    .lowew .lowew_wrap .nagchampa_txt {
-        width: 24vw;
-        margin: 0 auto;
+    .lowew .lowew_wrap .bg_wrap .mobile_lowew p {
+        margin-top: 25px;
+        font-size: 22px;
+        letter-spacing: 0.5px;
+    }
+
+    .lowew .lowew_wrap .bg_wrap .mobile_lowew a {
+        display:none;
 
     }
+
+
 
     .lowew .lowew_wrap .look {
         display: none;
@@ -490,7 +514,7 @@ body {
     }
 
     section .m_look_btn {
-        width: 95%;
+        width: 90%;
         height: 35px;
         border: 1px solid #000;
         text-align: center;
@@ -522,12 +546,17 @@ body {
 
     .main .visual {
         width: 100%;
+        height:500px;
         position: relative;
     }
 
     .main .visual .area {
         width: 100%;
         height: 100%;
+        background-image: url(../img/my-place.png);
+        background-position: center;
+        background-size: cover;
+
     }
 
     .main .visual .over {
@@ -646,8 +675,6 @@ body {
 
     .main .new ul li div i {
         width: 100%;
-        height: 242.5px;
-        overflow: hidden;
         display: block;
     }
 
@@ -696,11 +723,9 @@ body {
         background-repeat: no-repeat;
         background-size: 624px 316px;
         overflow: hidden;
+        color:#fff;
     }
 
-    .bodywash .limited .org .txt:hover {
-        background-image: url(../img/body_1.png);
-    }
 
     .bodywash .limited .org .txt p {
         line-height: 40px;
@@ -717,21 +742,6 @@ body {
     /*hover*/
 
 
-    .bodywash .limited .org .txt:hover p:first-child {
-        color: #434343;
-    }
-
-
-    .bodywash .limited .org .txt p:nth-child(2) {
-        color: #000;
-        font-size: 5vw;
-        font-weight: bold;
-    }
-
-    .bodywash .limited .org .txt p:nth-child(3) {
-        color: #000;
-        font-size: 4.4vw;
-    }
 
     .bodywash .limited .org .txt .txt_wrap {
         width: 90%;
@@ -925,7 +935,7 @@ body {
     }
 
     section .event .e_wrap .frame {
-        width: 420px;
+        width: 100%;
         margin: 10px auto;
     }
 
@@ -938,8 +948,7 @@ body {
 
 
     section .event .e_wrap .box {
-        width: 98%;
-        height: 400px;
+        width: 100%;
         margin: 0 auto;
         border: 1px solid #000;
         box-sizing: border-box;
@@ -951,7 +960,8 @@ body {
         height: 380px;
         margin: 0 auto;
         background-image: url(../img/holder-img-grey.PNG);
-        background-size: 100%;
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
 
     }
@@ -969,8 +979,7 @@ body {
     }
 
     section .review .r_wrap {
-        width: 95%;
-        height: 100%;
+        width: 90%;
         margin: 0 auto;
 
     }
@@ -985,7 +994,7 @@ body {
 
     section .review .r_wrap .photo {
         width: 100%;
-        height: 600px;
+        height: 550px;
     }
 
     section .review .r_wrap .photo ul {
@@ -1059,18 +1068,30 @@ body {
         background-size: 250px 250px;
     }
 
-    section .review .r_wrap .photo ul a span {
-        width: 160px;
+    section .review .r_wrap .photo ul li a span{
+        width: 70%;
         height: 30px;
         position: absolute;
-        right: 20px;
+        
+        right: 0;
         bottom: 20px;
+        
         display: block;
-        background-color: rgba(0, 0, 0, 1);
+        background-color: rgba(0, 0, 0, 0.5);
         transition: all 0.5s;
         text-align: center;
         line-height: 30px;
         color: #fff;
+    }
+    
+     section .review .r_wrap .photo ul li a p{
+         display:block;
+         width: 95%;
+         margin:0 auto;
+        
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     section .review .r_wrap .more {
@@ -1105,20 +1126,21 @@ body {
         width: 100%;
         font-family: 'Nanum Barun Gothic';
         background-color: #dddddd;
-        padding: 65px 65px 35px 65px;
+        padding: 65px 30px 65px 30px;
         box-sizing: border-box;
     }
 
     footer .f_wrap .f1 ul {
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
 
     }
 
-    footer .f_wrap .f1 ul li {
-        font-weight: bold;
+    footer .f_wrap .f1 ul li a{
+        font-size:0.8em;
+        
     }
 
     footer .f_wrap .f2 {
@@ -1126,7 +1148,7 @@ body {
         margin: 0 auto;
         margin-top: 10%;
         text-align: center;
-        font-size: 13px;
+        font-size: 0.7em;
     }
 
     footer .f_wrap .f3 {
@@ -1181,7 +1203,7 @@ body {
         position: fixed;
         top: 0;
         left: -300px;
-        z-index: 11;
+        z-index: 15;
 
     }
 
@@ -1231,7 +1253,7 @@ body {
         left: 0;
 
         background: rgba(0, 0, 0, 0.3);
-        z-index: 10;
+        z-index: 13;
     }
 
 }
@@ -1282,7 +1304,7 @@ body {
         height: 80px;
         position: fixed;
         top: 0;
-        z-index: 15;
+        z-index: 12;
 
     }
 
@@ -1407,7 +1429,7 @@ body {
 
 
     .best .best_wrap .product {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
         position: relative;
     }
@@ -1484,6 +1506,10 @@ body {
         width: 100%;
         height: 100%;
         position: relative;
+    }
+    
+    .lowew .lowew_wrap .bg_wrap .mobile_lowew {
+        display:none;
     }
 
     .lowew .lowew_wrap .bg_wrap {
@@ -2326,7 +2352,7 @@ body {
         position: absolute;
 
         background: rgba(0, 0, 0, 0.4);
-        z-index: 10;
+        z-index: 13;
     }
 
 
