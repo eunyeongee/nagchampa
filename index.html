@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>nag champa</title>
+
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <!--파비콘(favicon)-->
     <link href="img/fbcon.png" type="image/png" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <script src="js/jquery-3.5.1.js">
     </script>
@@ -19,8 +20,8 @@
 
     <script>
         $(function() {
-            
-            
+
+
             //pc버전 sns 마우스 오버 효과
             $('.photo ul li').hover(function() {
 
@@ -39,21 +40,21 @@
             //tab_menu
             var menuBg = $('.tab_bg');
             var bgHeight = $(document).height();
-            var bgWidth = $(document).width();
-            
-            
+            var bgWidth = $(window).width();
+
+
             menuBg.css({
-                'width': bgWidth
-                //'height': bgHeight
+                'width': bgWidth,
+                'height': bgHeight
             });
-            
-            
-            
+
+
+
             var menuclick = $('.mo_navi');
             var menuBox = $('.tab_menu');
             var menuClose = $('.close_btn');
-            
-       
+
+
             menuclick.click(function(e) {
                 e.preventDefault
                 menuBox.animate({
@@ -72,7 +73,7 @@
                 menuBg.fadeOut(300);
 
             });
-            
+
             //
 
 
@@ -113,17 +114,20 @@
                 }
 
             });
-            
-            
-            
 
 
         });
     </script>
+
+
+
+
+
+
 </head>
 
 <body>
-   
+
     <header>
         <div class="header_wrap">
 
@@ -175,7 +179,7 @@
 
         </div>
     </header>
-    
+
     <div class="wrap">
 
         <section>
@@ -210,63 +214,99 @@
 
             </section>
             <!--banner1-->
-            <section class="best">
+            <section class="best clearboth">
 
                 <article class="best_wrap">
                     <div class="txt">
                         BEST
                     </div>
-                    <div class="product">
 
 
-                        <ul>
+                    <div class="product swiper-container mySwiper">
 
-                            <li>
-                                <div class="arrow_left">
-                                    <img src="img/arrow-left-icons.png" alt="">
-                                </div>
-                            </li>
-                            <li>
+
+                        <ul class="swiper-wrapper">
+
+
+                            <li class="swiper-slide">
                                 <div class="p1">
+
                                     <img src="img/best1.png" alt="나그참파 인센스 스틱 15g">
-                                    <p>나그참파 인센스 스틱 15g</p>
+                                    <a href="#">
+                                        <p>나그참파 인센스 스틱 15g</p>
+                                    </a>
                                 </div>
                             </li>
-                            <li>
+
+                            <li class="swiper-slide">
+
                                 <div class="p2">
+
                                     <img src="img/best2.png" alt="인센스 홀더 라운드형">
-                                    <p>인센스 홀더 라운드형</p>
+                                    <a href="#">
+                                        <p>인센스 홀더 라운드형</p>
+                                    </a>
                                 </div>
                             </li>
-                            <li>
+
+                            <li class="swiper-slide">
                                 <div class="p3">
+
                                     <img src="img/best3.png" alt="아유베르다 인센스 스틱 15g">
-                                    <p>아유베르다 인센스 스틱 15g</p>
+                                    <a href="#">
+                                        <p>아유베르다 인센스 스틱 15g</p>
+                                    </a>
                                 </div>
                             </li>
-                            <li>
-                                <div class="arrow_right">
-                                    <img src="img/arrow-right-icons.png" alt="">
+
+                            <li class="swiper-slide">
+                                <div class="p1">
+
+                                    <img src="img/best1.png" alt="나그참파 인센스 스틱 15g">
+                                    <a href="#">
+                                        <p>나그참파 인센스 스틱 15g</p>
+                                    </a>
                                 </div>
                             </li>
+
+                            <li class="swiper-slide">
+
+                                <div class="p2">
+
+                                    <img src="img/best2.png" alt="인센스 홀더 라운드형">
+                                    <a href="#">
+                                        <p>인센스 홀더 라운드형</p>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <div class="p3">
+
+                                    <img src="img/best3.png" alt="아유베르다 인센스 스틱 15g">
+                                    <a href="#">
+                                        <p>아유베르다 인센스 스틱 15g</p>
+                                    </a>
+                                </div>
+                            </li>
+
 
                         </ul>
 
-                        <div class="bar">
-                            <ul>
-                                <li>
 
-                                </li>
-                                <li>
 
-                                </li>
-                                <li>
 
-                                </li>
-                            </ul>
-                        </div>
+
+
+
 
                     </div>
+
+                    <div class="swiper-button-next swiper-button-black"></div>
+                    <div class="swiper-button-prev swiper-button-black"></div>
+                    <div class="swiper-pagination swiper-pagination-black"></div>
+
+
 
 
                 </article>
@@ -281,23 +321,36 @@
             <section class="lowew">
 
                 <div class="lowew_wrap">
-                    <div class="txt">
 
-                        <p class="lowew_txt">LOWEW</p>
-                        <p class="x">
-                            X
-                        </p>
-                        <p class="nagchampa_txt">
-                            <img src="img/logo.png" alt="nagchampa logo">
-                        </p>
+                    <div class="bg_wrap">
+                        <div class="desktop_lowew">
+                            <div class="txt">
+                                <h3>LOWER X NAGCHAMPA</h3>
+                                <p>싱그러운 꽃향과 잔잔한 참파향의 만남,
+                                    지금 바로 만나보세요.</p>
+                                <a href="#"> 자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="none mobile_lowew">
+                            <div class="txt">
+                                <h3>LOWER X NAGCHAMPA</h3>
+                                <p>싱그러운 꽃향과 잔잔한 참파향의 만남,
+                                    지금 바로 만나보세요.</p>
+                                <a href="#"> 자세히 보기</a>
+                            </div>
+
+                        </div>
+
 
                     </div>
-                    <div class="look">
-                        <a href="#">자세히보기</a>
-                    </div>
+
+
+
+
                 </div>
 
             </section>
+
             <div class="m_look_btn">
                 <a href="#">보러가기</a>
             </div>
@@ -306,33 +359,34 @@
 
             <!--banner3-->
 
-            <section class="main">
+            <section class="main clearboth">
                 <article class="visual">
-                   
+
                     <div class="area">
-                        <img src="img/my-place.png" alt="myplace">
+
+                        <div class="over">
+                            <div class="txt">
+
+                                <ul>
+                                    <li>
+                                        <h1>NEW:<br>나른한 주말오후의 향</h1>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            자세히 보기
+                                        </a>
+                                    </li>
+                                </ul>
 
 
-                    </div>
-
-                    <div class="over">
-                        <div class="txt">
-
-                            <ul>
-                                <li>
-                                    <h1>NEW:<br>나른한 주말오후의 향</h1>
-
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>자세히 보기</p>
-                                    </a>
-                                </li>
-                            </ul>
-
-
+                            </div>
                         </div>
+
+
                     </div>
+
+
 
 
                 </article>
@@ -340,6 +394,7 @@
                 <div class="m_look_btn">
                     <a href="#">자세히보기</a>
                 </div>
+
                 <article class="new">
 
 
@@ -408,65 +463,78 @@
 
 
             <section class="bodywash">
+
                 <div class="limited">
                     <div class="org">
-                        <div class="txt">
 
-                            <div class="txt_wrap">
-                                <p class="txt1"> LIMITED EDITION: <br>
-                                    몸과 마음을 relex 시켜주는
-                                </p>
-                                <p class="org_bodywash">
-                                    nag champa original bodywash
-                                </p>
-                                <p class="kor">
-                                    나그참파의 인센스향을 그대로 담은 바디워시
-                                </p>
-                                <div class="more">
-                                    <a href="#">
-                                        보러가기→
-                                    </a>
+                        <div class="bg_wrap">
+                            <div class="bg_box">
+
+                                <div class="txt">
+
+                                    <div class="txt_wrap">
+                                        <p class="txt1"> LIMITED EDITION: <br>
+                                            몸과 마음을 relex 시켜주는
+                                        </p>
+                                        <p class="org_bodywash">
+                                            nag champa original bodywash
+                                        </p>
+                                        <p class="kor">
+                                            나그참파의 인센스향을 그대로 담은 바디워시
+                                        </p>
+                                        <div class="more">
+                                            <a href="#">
+                                                보러가기→
+                                            </a>
+                                        </div>
+                                    </div>
+
+
                                 </div>
                             </div>
-
-
                         </div>
 
                         <div class="wash">
                             <ul>
                                 <li>
-                                    <div class="p1">
-                                        <img src="img/bodywash.png" alt="나그참파 오리지널 바디워시">
+                                    <a href="#">
+                                        <div class="p1">
+                                            <img src="img/bodywash.png" alt="나그참파 오리지널 바디워시">
 
-                                        <p>나그참파 오리지널 바디워시</p>
+                                            <p>나그참파 오리지널 바디워시</p>
 
-                                        <div class="new">
-                                            <p>new</p>
+                                            <div class="new">
+                                                <p>new</p>
+                                            </div>
+
                                         </div>
 
-                                    </div>
+                                    </a>
 
 
                                 </li>
                                 <li>
-                                    <div class="p2">
-                                        <img src="img/bodywash.png" alt="나그참파 슈퍼히트 바디워시">
+                                    <a href="#">
+                                        <div class="p2">
+                                            <img src="img/bodywash.png" alt="나그참파 슈퍼히트 바디워시">
 
-                                        <p>나그참파 슈퍼히트 바디워시</p>
+                                            <p>나그참파 슈퍼히트 바디워시</p>
 
-                                        <div class="new">
-                                            <p>new</p>
+                                            <div class="new">
+                                                <p>new</p>
+
+                                            </div>
 
                                         </div>
-
-                                    </div>
+                                    </a>
 
                                 </li>
                             </ul>
                         </div>
 
                     </div>
-                    <div class="m_look_btn">
+
+                    <div class="m_look_btn none">
                         <a href="#">자세히보기</a>
                     </div>
 
@@ -481,7 +549,7 @@
 
             <!--banner5-->
 
-            <section class="event">
+            <section class="event clearboth">
                 <div class="e_wrap">
                     <div class="txt">
                         <div class="title">
@@ -524,7 +592,7 @@
 
 
 
-            <section class="review">
+            <section class="review clearboth">
                 <article class="r_wrap">
                     <div class="r_txt">
                         #nagchampa
@@ -633,7 +701,7 @@
     <div class="tab_menu">
         <div class="tab_wrap">
             <div class="close_btn">
-                <a href="#" class="close_btn">
+                <a href="#">
                     <img src="img/600px-close_.png" alt="close">
                 </a>
             </div>
@@ -719,10 +787,13 @@
             </nav>
         </div>
     </div>
-    
-    
-    
-    
+
+
+
+    <!--tab_bg-->
+    <div class="tab_bg">
+
+    </div>
 
 
 
@@ -800,18 +871,35 @@
                 <img src="img/logo.png" alt="f_logo">
             </div>
             <div class="copy">
-                <p>ⓒ 2020 nag champa</p>
+                <p>ⓒ 2021 nag champa</p>
             </div>
 
         </article>
 
     </footer>
-    
-    <!--tab_bg-->
-   <div class="tab_bg">
-        
-    </div>
-    
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
 
 
 </body>
