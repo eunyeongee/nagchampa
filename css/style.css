@@ -247,6 +247,8 @@ body {
         height: 740px;
         background-image: url(../img/mobile-main.PNG);
         background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
 
     }
 
