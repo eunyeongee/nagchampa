@@ -58,7 +58,6 @@ a {
 body {
     color: #6a6a6a;
     font-family: 'Nanum Myeongjo';
-    position: relative;
 }
 
 li {
@@ -71,6 +70,11 @@ img {
 
 iframe {
     width: 100%;
+}
+
+.none {
+    display: none;
+    content: "";
 }
 
 i {
@@ -121,7 +125,7 @@ body {
 
 
 /*모바일*/
-@media screen and (max-width:640px) {
+@media screen and (max-width:540px) {
 
     .wrap {
         width: 100%;
@@ -266,14 +270,25 @@ body {
 
 
     /*banner1-best*/
+    .swiper-button-prev,.swiper-button-next{
+        display:none !important;
+    }
+    
+    .swiper-pagination {
+        width:90%;
 
+    }
+
+    .swiper-pagination-bullet {
+        margin: 0 4px;
+    }
     .best {
         width: 100%;
 
     }
 
     .best .best_wrap {
-        width: 95%;
+        width: 90%;
         padding: 30px 0;
         margin: 0 auto;
     }
@@ -283,7 +298,6 @@ body {
         height: 25px;
         font-weight: bold;
         font-size: 5vw;
-
         box-sizing: border-box;
 
     }
@@ -879,7 +893,6 @@ body {
     }
 
     section .event .e_wrap .txt .con {
-        width: 60%;
         color: #000;
         text-align: left;
         border-bottom: 1px solid #000;
@@ -991,7 +1004,7 @@ body {
         width: 280px;
         height: 280px;
         box-sizing: border-box;
-        background-size: 240px 240px;
+        background-size: 280px 240px;
         background-repeat: no-repeat;
         background-position: center;
         position: relative;
@@ -1219,7 +1232,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        height:5390px;
+
         background: rgba(0, 0, 0, 0.3);
         z-index: 10;
     }
@@ -1252,10 +1265,10 @@ body {
 
 
 /*pc*/
-@media screen and (min-width:1024px) {
+@media screen and (min-width:540px) {
 
     .wrap {
-        width: 1450px;
+        width: 80%;
         margin: 0 auto;
         padding-top: 80px;
 
@@ -1272,12 +1285,12 @@ body {
         height: 80px;
         position: fixed;
         top: 0;
-        z-index: 1;
+        z-index: 15;
 
     }
 
     header .header_wrap {
-        width: 1450px;
+        width: 80%;
         margin: 0 auto;
         height: 25px;
         margin-top: 25px;
@@ -1369,26 +1382,22 @@ body {
 
     .best .best_wrap {
         width: 100%;
-        height: 450px;
-        padding: 65px 0;
+        height:100%;
+        padding: 65px 0 80px;
+        box-sizing: border-box;
+        position: relative;
     }
 
     .best .best_wrap .txt {
         width: 100%;
         height: 25px;
+        margin-left: 50px;
         font-weight: bold;
         font-size: 20px;
-        padding-left: 50px;
         box-sizing: border-box;
     }
 
-    .best .best_wrap .product .arrow_left {
-        width: 35px;
-        height: 400px;
-        float: left;
-        line-height: 400px;
-        margin-right: 100px;
-    }
+
 
     /*.best .best_wrap .product .arrow_left img 
     {
@@ -1396,49 +1405,33 @@ body {
         height:35px;
         margin:auto 0;
     }*/
+
+
+
+
     .best .best_wrap .product {
-        width: 100%;
-        margin: 10px auto;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
     }
 
-    .best .best_wrap .product ul {
-        width: 100%;
-        height: 80%;
-        display: flex;
-        justify-content: space-between;
 
+    .best .best_wrap .product ul li {
+        width: 33.3%;
+        display: inline-block;
     }
 
-    .best .best_wrap .product ul li div {
-        cursor: pointer;
 
-    }
 
     .best .best_wrap .product ul li div img {
         transition: all 0.3s;
     }
 
-    .best .best_wrap .product ul li:first-child div {
-        cursor: default;
-        /*커서 일빈커서*/
-    }
-
-    .best .best_wrap .product ul li:last-child div {
-        cursor: default;
-        /*커서 일빈커서*/
-    }
 
     .best .best_wrap .product ul li p {
         text-align: center;
     }
 
-    .best .best_wrap .product .arrow_right {
-        width: 35px;
-        height: 400px;
-        float: left;
-        line-height: 400px;
-        margin-left: 100px;
-    }
 
     /*hover*/
 
@@ -1454,50 +1447,22 @@ body {
         color: #000;
     }
 
+    .swiper-pagination {
+        width:100%;
+        bottom:35px;
+
+    }
+
+
+    .swiper-pagination-bullet {
+        margin: 0 4px;
+    }
+
+
+
 
 
     /*hover*/
-
-
-
-    .best .best_wrap .product ul li:first-child div img {
-        filter: none;
-        cursor: pointer;
-    }
-
-    .best .best_wrap .product ul li:last-child div img {
-        filter: none;
-        cursor: pointer;
-    }
-
-    .best .best_wrap .bar ul {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .best .best_wrap .bar ul li {
-        width: 10px;
-        height: 10px;
-        background-color: #d2d2d2;
-        border-radius: 10px;
-        cursor: pointer;
-
-    }
-
-    .best .best_wrap .bar ul li:first-child {
-
-        background-color: #464646;
-
-
-    }
-
-    .best .best_wrap .bar {
-        width: 100px;
-        margin: 0 auto;
-    }
-
 
 
 
@@ -1514,52 +1479,68 @@ body {
 
     .lowew {
         width: 100%;
-        height: 525px;
-        background-image: url(../img/loewe.png);
-        background-size: 1450px 525px;
-        overflow: hidden;
+        margin-top:65px;
+        height: 515px;
     }
 
     .lowew .lowew_wrap {
-        width: 25%;
-        margin-left: 570px;
-        padding: 20px 0;
-        box-sizing: border-box;
-
-
-    }
-
-    .lowew .lowew_wrap .txt {
         width: 100%;
-        height: 25%;
-        margin-top: 50%;
-        text-align: center;
-        font-family: vogue;
-        font-size: 40px;
-        color: #000;
-        filter: drop-shadow(3px 3px 2px #8e8e8e);
+        height: 100%;
+        position: relative;
     }
 
-    .lowew .lowew_wrap .txt .lowew_txt {
-        margin-bottom: 10px;
+    .lowew .lowew_wrap .bg_wrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
     }
 
-    .lowew .lowew_wrap .nagchampa_txt {
-        width: 200px;
-        margin: 0 auto;
+    .lowew .lowew_wrap .bg_wrap .desktop_lowew {
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/lowew.jpg);
+        background-size: cover;
 
     }
 
-    .lowew .lowew_wrap .look {
+    .lowew .lowew_wrap .bg_wrap .desktop_lowew .txt {
+        padding: 100px;
+        color: #fff;
+    }
 
-        text-align: center;
-        padding-top: 110px;
+    .lowew .lowew_wrap .bg_wrap .desktop_lowew h3 {
+        font-weight: normal;
+        font-size: 35px;
+    }
+
+    .lowew .lowew_wrap .bg_wrap .desktop_lowew p {
+        margin-top: 25px;
         font-size: 20px;
+        letter-spacing: 0.5px;
     }
 
-    .lowew .lowew_wrap .look a:hover {
-        text-decoration: underline;
+    .lowew .lowew_wrap .bg_wrap .desktop_lowew a {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 20px;
+        color: #fff;
+        width: 150px;
+        line-height: 50px;
+        height: 50px;
+        border: 1px #fff solid;
+        box-sizing: border-box;
+        transition: all 0.3s;
     }
+
+    .lowew .lowew_wrap .bg_wrap .desktop_lowew a:hover {
+        color: #6a6a6a;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+
+
+
+
 
 
 
@@ -1578,8 +1559,7 @@ body {
     /*banner3-main*/
     .main {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
+        height: 768px;
         margin-top: 65px;
     }
 
@@ -1587,34 +1567,40 @@ body {
 
     .main .visual {
         width: 50%;
-        height: 725px;
+        height: 100%;
         position: relative;
     }
 
     .main .visual .area {
         width: 100%;
         height: 100%;
-        position: absolute;
+        background-image: url(../img/my-place.png);
+        background-size: cover;
+
     }
+
+    .main > article {
+        float: left;
+    }
+
+
 
     .main .visual .over {
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0);
-        position: absolute;
         color: #fff;
         transition: all 0.5s;
     }
 
-    .main .vosual .txt {
+    .main .visual .txt {
         width: 100%;
 
     }
 
-    .main .vosual .txt .txt_wrap {
-        width: 50%;
-        margin: 0 auto;
-    }
+
+
+
 
 
     /*hover*/
@@ -1657,13 +1643,13 @@ body {
         letter-spacing: 3px;
     }
 
-    .main .visual .over .txt ul li a p {
+    .main .visual .over .txt ul li a {
         font-size: 20px;
         color: #fff;
         letter-spacing: 1px;
     }
 
-    .main .visual .over .txt ul li a:hover p {
+    .main .visual .over .txt ul li a:hover {
         text-decoration: underline;
     }
 
@@ -1673,47 +1659,61 @@ body {
 
     .main .new {
         width: 50%;
+        height: 100%;
 
     }
 
     .main .new ul {
+
         width: 100%;
-        display: flex;
-        flex-flow: row wrap;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+
 
     }
 
     /* dispaly:flex는 직속 부모에 적용해야 적용된다! 중요★*/
 
     .main .new ul li {
-        width: 50%;
-        padding: 60px;
-        box-sizing: border-box;
+        width: 49.5%;
+        display: inline-block;
+        padding: 5%;
         padding-bottom: 0;
+
+        box-sizing: border-box;
+
 
 
     }
 
+
     .main .new ul li p {
+        width: 95%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0 auto;
         margin-top: 5px;
         text-align: center;
         color: #000;
     }
 
     .main .new ul li div {
+        width: 100%;
         cursor: pointer;
         /*overflow:hidden;*/
     }
 
     .main .new ul li div i {
         width: 100%;
-        height: 242.5px;
         overflow: hidden;
         display: block;
     }
 
     .main .new ul li div i img {
-        transition: transform 0.5s;
+        width: 100%;
+        transition: transform 0.3s;
     }
 
     .main .new ul li div:hover img {
@@ -1739,85 +1739,88 @@ body {
 
     .bodywash {
         width: 100%;
+        height: 665px;
         margin-top: 65px;
 
     }
 
     .bodywash .limited {
-        display: flex;
+        width: 100%;
+        height: 100%;
     }
 
-    .bodywash .limited .org {
-        width: 625px;
+    .bodywash .limited > div {
+        width: 50%;
+        float: left;
 
     }
+
+
+    .bodywash .limited .org .bg_wrap {
+        width: 100%;
+    }
+
+    .bodywash .limited .org .bg_wrap .bg_box {
+        opacity: 0.8;
+        width: 100%;
+        height: 300px;
+        background-image: url(../img/body.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 0.3s;
+
+    }
+
+    .bodywash .limited .org .bg_wrap .bg_box: {}
+
+    .bodywash .limited .org .bg_wrap .bg_box .txt {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
 
     .bodywash .limited .org .txt {
         width: 100%;
-        height: 316px;
-        background-image: url(../img/body.PNG);
-        background-repeat: no-repeat;
-        background-size: 624px 316px;
-        overflow: hidden;
-        transition: all 0.5s;
-    }
-
-    .bodywash .limited .org .txt:hover {
-        background-image: url(../img/body_1.png);
-    }
-
-    .bodywash .limited .org .txt p {
-        line-height: 40px;
-        font-size: 25px;
-
-    }
-
-    .bodywash .limited .org .txt p:first-child {
-        margin-top: 50px;
-        color: #fff;
-    }
-
-
-    /*hover*/
-
-
-    .bodywash .limited .org .txt:hover p:first-child {
-        color: #434343;
-    }
-
-
-    .bodywash .limited .org .txt p:nth-child(2) {
-        color: #000;
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-    .bodywash .limited .org .txt p:nth-child(3) {
-        color: #000;
+        height: auto;
     }
 
     .bodywash .limited .org .txt .txt_wrap {
-        width: 500px;
-        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 50px;
+        font-size: 25px;
+        color: #fff;
+        position: relative;
     }
 
-    .bodywash .limited .org .txt .txt_wrap .more {
-        width: 110px;
-        height: 30px;
-        line-height: 30px;
+    .bodywash .limited .org .txt .txt1 {
+        font-size: 30px;
+
+    }
+
+    .bodywash .limited .org .txt .org_bodywash {
+        margin-top: 10px;
+
+    }
+
+
+
+    .bodywash .limited .org .txt .more {
         float: right;
-        margin-top: 45px;
-        font-size: 23px;
-
+        margin-top: 70px;
 
     }
 
-    .bodywash .limited .org .txt .txt_wrap .more a {
+    .bodywash .limited .org .txt .more a {
         color: #fff;
     }
 
-    .bodywash .limited .org .txt .txt_wrap .more:hover {
-        border-bottom: 1.5px solid #fff;
+    .bodywash .limited .org .txt .more a:hover {
+        text-decoration: underline;
     }
 
     .bodywash .limited .org .wash {
@@ -1825,61 +1828,57 @@ body {
     }
 
     .bodywash .limited .org .wash ul {
-        display: flex;
+        width: 100%;
+        height: 315px;
+
     }
 
     .bodywash .limited .org .wash ul li {
-        width: 50%;
-        font-size: 20px;
-        cursor: pointer;
+        width: 49.5%;
+        padding: 10px;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    .bodywash .limited .org .wash ul li div {
+        width: 100%;
+        text-align: center;
+        position: relative;
     }
 
     .bodywash .limited .org .wash ul li div img {
-        transition: all 0.5s;
+
+        width: 80%;
+        transition: all 0.3s;
+
     }
 
-    /*hover*/
-
-
-    .bodywash .limited .org .wash ul li:hover div img {
+    .bodywash .limited .org .wash ul li div img:hover {
         transform: scale(1.1);
-        filter: drop-shadow(10px 10px 11px #b3b3b3);
+        filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.3));
     }
 
-
-    /*hover*/
-
-
-
-    .bodywash .limited .org .wash ul li div {
-        position: relative;
-
+    .bodywash .limited .org .wash ul li div p {
+        width: 95%;
+        text-align: center;
+        margin: 0 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
-
 
     .bodywash .limited .org .wash ul li div .new {
-        width: 50px;
-        height: 50px;
-        background-color: #000;
-        border-radius: 50px;
-        line-height: 50px;
-        color: #fff;
         position: absolute;
         top: 20px;
-        left: 20px;
+        left: 10px;
+        font-size: 20px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+        color: #fff;
+        background: #000;
     }
-
-
-    .bodywash .limited .place {
-        width: 57%;
-    }
-
-    .bodywash .limited .org .wash ul li {
-        text-align: center;
-    }
-
-
-
 
 
 
@@ -1895,11 +1894,12 @@ body {
 
 
     section .event {
-        width: 1450px;
+        width: 100%;
         height: 600px;
         background-image: url(../img/holder-background.png);
         background-repeat: no-repeat;
         margin: 65px 0;
+        background-size: cover;
         /* position:relative;*/
     }
 
@@ -1972,7 +1972,11 @@ body {
         font-size: 25px;
     }
 
-    section .event .e_wrap .txt .more:hover a {
+    section .event .e_wrap .txt .more a {
+        display: inline;
+    }
+
+    section .event .e_wrap .txt .more a:hover {
         text-decoration: underline;
 
     }
@@ -2012,7 +2016,7 @@ body {
 
 
     section .review {
-        width: 1450px;
+        width: 100%;
         height: 950px;
     }
 
@@ -2026,9 +2030,9 @@ body {
     section .review .r_wrap .r_txt {
         width: 100%;
         height: 18px;
+        margin-left: 50px;
         font-weight: bold;
         font-size: 25px;
-        padding-left:50px;
         box-sizing: border-box;
     }
 
@@ -2185,13 +2189,13 @@ body {
     }
 
     footer .f_wrap .f2 {
-        width: 1450px;
+        width: 80%;
         margin: 0 auto;
         margin-top: 110px;
     }
 
     footer .f_wrap .f3 {
-        width: 1450px;
+        width: 80%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -2240,7 +2244,7 @@ body {
         position: fixed;
         top: 0;
         left: -600px;
-        z-index: 11;
+        z-index: 16;
 
     }
 
@@ -2314,12 +2318,11 @@ body {
     }
 
     .tab_bg {
-        
         display: none;
         top: 0;
         left: 0;
         position: absolute;
-        height:5590px !important;
+
         background: rgba(0, 0, 0, 0.4);
         z-index: 10;
     }
