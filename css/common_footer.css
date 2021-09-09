@@ -1,0 +1,59 @@
+*{margin:0;padding:0; box-sizing:border-box;}
+
+a{display:block;text-decoration:none;color:#6a6a6a}
+
+.clearboth{content:"";display:block;clear:both}
+body{color:#6a6a6a;font-family:'Nanum Myeongjo'}
+
+li{list-style:none}
+
+img{width:100%}
+
+iframe{width:100%}
+
+.none{display:none;content:""}
+
+i{display:block}
+
+#footer{width:100%;font-family:'Nanum Barun Gothic';background-color:#ddd;margin-top:100px; padding:65px;box-sizing:border-box}
+
+#footer .f_wrap {width:100%;}
+    
+#footer .f_wrap .f1 {width:100%;}
+    
+#footer .f_wrap .f1 ul{width:800px;margin:0 auto;display:flex;justify-content:space-between}
+    
+#footer .f_wrap .f1 ul li:hover{font-weight:700}
+    
+#footer .f_wrap .f2{width:80%;margin:0 auto;margin-top:110px}
+    
+#footer .f_wrap .f3{width:80%;margin:0 auto;display:flex;justify-content:space-between}
+    
+#footer .f_wrap .f3 .sns ul{width:200px;display:flex;justify-content:space-between}
+    
+#footer .f_wrap .f3 .sns ul li:last-child{width:38px}
+    
+#footer .f_wrap .f_logo{width:150px;margin:0 auto;padding-top:75px}
+    
+#footer .f_wrap .copy{width:150px;margin:0 auto;text-align:center;font-size:12px}
+
+
+@media screen and (max-width:1024px){
+    
+    #footer{width:100%; padding:50px;}
+    
+    #footer .f_wrap .f1 ul {width:100%;}
+    
+    #footer .f_wrap .f2 {width:100%;}
+    
+    #footer .f_wrap .f3 {width:100%; flex-direction: column;}
+    
+    #footer .f_wrap .f3 .sns {width:50%; text-align: center; margin:0 auto; margin-top:30px;}
+    
+    #footer .f_wrap .f3 .sns ul {width:100%;  justify-content: center;}
+    
+    #footer .f_wrap .f3 .sns ul li {margin:0 10px; }
+    
+
+    
+}
