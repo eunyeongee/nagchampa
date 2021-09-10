@@ -66,7 +66,7 @@ body,html{width:100%;height:100%;position:relative;color:#6a6a6a}
 
 
     
-    .wrap{width:80%;margin:0 auto;padding-top:30px}
+    .wrap{width:80%;margin:0 auto;padding-top:30px; }
     
     section{width:100%}
 
@@ -162,7 +162,7 @@ body,html{width:100%;height:100%;position:relative;color:#6a6a6a}
     
     .main .new ul li p{width:95%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0 auto;margin-top:5px;text-align:center;}
     
-    .main .new ul li div .i_wrap img{width:100%; transform:scale(1.1); transition:all .3s}
+    .main .new ul li div .i_wrap img{width:100%; display:block; transition:all .3s}
 
     .main .new ul li div:hover img{transform:scale(1.2)}
     
@@ -220,7 +220,7 @@ body,html{width:100%;height:100%;position:relative;color:#6a6a6a}
     
     section .event .e_wrap .txt .con{width:100%;height:220px;color:#000;text-align:left;border-bottom:1px solid #000;font-size:1.5em;overflow:hidden}
     
-    section .event .e_wrap .txt .con span{display:block; margin:65px auto}
+    section .event .e_wrap .txt .con span{display:block; margin:65px auto; text-align: center;}
     
     section .event .e_wrap .txt .bar{width:100%;font-size:25px;padding:20px 0}
     
