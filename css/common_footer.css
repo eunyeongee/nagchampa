@@ -40,7 +40,7 @@ i{display:block}
 
 @media screen and (max-width:1024px){
     
-    #footer{width:100%; padding:50px;}
+    #footer{width:100%; padding:30px;}
     
     #footer .f_wrap .f1 ul {width:100%;}
     
