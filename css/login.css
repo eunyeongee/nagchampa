@@ -131,7 +131,7 @@ body,html{width:100%;height:100%;position:relative;color:#6a6a6a}
     font-family:'Nanum Myeongjo';
     width:100%;
     font-size:1.2em;
-    height:65px;
+    height:50px;
     color:#fff;
     background:#bba795;
     border:none;
@@ -160,4 +160,6 @@ body,html{width:100%;height:100%;position:relative;color:#6a6a6a}
     .log h1 {margin-left:20px;}
     
     .wrap {width:100%; padding:0 30px;}
+    
+    .btn button{height:40px;}
 }
